@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="Loki_Flatpickr::js/flatpickr.min.js" />
+        <css src="Loki_Flatpickr::css/flatpickr.min.css" />
+    </head>
+
+    <body>
+        <referenceContainer name="loki-scripts">
+            <block name="loki.directives.flatpickr" template="Loki_Flatpickr::script/directive-flatpickr.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

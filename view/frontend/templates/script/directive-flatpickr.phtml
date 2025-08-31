@@ -1,0 +1,15 @@
+<script>
+    window.addEventListener('alpine:init', () => Alpine.data('LokiFlickr', () => ({
+        ...LokiFlatpickr
+    })));
+
+    document.addEventListener('alpine:init', () => {
+        Alpine.directive('flickr', (el, {}, { evaluate }) => {
+            flatpickr(el, {
+                altInput: true,
+                altFormat: 'Y-m-d',
+                dateFormat: 'Y-m-d',
+            });
+        });
+    });
+</script>
