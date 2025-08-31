@@ -1,11 +1,19 @@
+<?php
+declare(strict_types=1);
+
+use Loki\Components\Factory\ViewModelFactory;
+use Loki\Flatpickr\ViewModel\Options;
+use Magento\Framework\View\Element\Template;
+
+/** @var Template $block */
+/** @var ViewModelFactory $viewModelFactory */
+/** @var Options $options */
+$options = $viewModelFactory->create(Options::class);
+?>
 <script>
     document.addEventListener('alpine:init', () => {
-        Alpine.directive('flatpickr', (el, {}, { evaluate }) => {
-            flatpickr(el, {
-                altInput: true,
-                altFormat: 'Y-m-d',
-                dateFormat: 'Y-m-d',
-            });
+        Alpine.directive('flatpickr', (el, {}) => {
+            flatpickr(el, JSON.parse('<?= /* noEscape */ $options->toJson($block) ?>'));
         });
     });
 </script>
