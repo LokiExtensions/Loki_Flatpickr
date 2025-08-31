@@ -1,10 +1,6 @@
 <script>
-    window.addEventListener('alpine:init', () => Alpine.data('LokiFlickr', () => ({
-        ...LokiFlatpickr
-    })));
-
     document.addEventListener('alpine:init', () => {
-        Alpine.directive('flickr', (el, {}, { evaluate }) => {
+        Alpine.directive('flatpickr', (el, {}, { evaluate }) => {
             flatpickr(el, {
                 altInput: true,
                 altFormat: 'Y-m-d',
