@@ -15,7 +15,7 @@ $options = $viewModelFactory->create(Options::class);
 <script>
     document.addEventListener('alpine:init', () => {
         Alpine.directive('flatpickr', (el, {}) => {
-            flatpickr(el, JSON.parse('<?= /* noEscape */ $options->toJson($block) ?>'));
+            flatpickr(el, JSON.parse('<?= /* @noEscape */ $options->toJson($block) ?>'));
         });
     });
 </script>
