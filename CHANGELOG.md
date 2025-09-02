@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.0.1] - 31 August 2025
+## [1.0.1] - 02 September 2025
+### Fixed
+- Optimize loading of remote resources
+- Allow configuring options from XML layout
+- Add additional handle `loki_flatpickr` for usage outside of Loki Components
+
+## [1.0.0] - 31 August 2025
 ### Added
 - Initial release
