@@ -10,7 +10,7 @@ class Options implements ArgumentInterface
 {
     public function toJson(AbstractBlock $block): string
     {
-        $options = array_merge_recursive($this->getDefaultOptions(), (array)$block->getOptions());
+        $options = array_merge($this->getDefaultOptions(), (array)$block->getOptions());
 
         return json_encode($options);
     }
