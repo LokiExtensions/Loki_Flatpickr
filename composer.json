@@ -1,6 +1,6 @@
 {
   "name": "loki/magento2-flatpickr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Magento 2 module to add an Alpine.js directive x-flatpickr",
   "type": "magento2-module",
   "require": {

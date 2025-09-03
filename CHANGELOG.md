@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 03 September 2025
+### Fixed
+- array_merge_recursive does not work, use array_merge instead
+- Add examples to README
+
 ## [1.0.1] - 02 September 2025
 ### Fixed
 - Optimize loading of remote resources
