@@ -1,6 +1,15 @@
 {
-    "modules": [
+    "sequence": [
         "Loki_Components"
+    ],
+    "modules": [
+        "Loki_Components",
+        "Loki_CssUtils",
+        "Magento_Backend",
+        "Magento_Config",
+        "Magento_Customer",
+        "Magento_Store",
+        "Yireo_CspUtilities"
     ],
     "components": [],
     "config": [],
