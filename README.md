@@ -19,7 +19,6 @@ If you want to add Flatpickr to a Loki Field Component, add the `x-flatpickr` di
 <block name="example" template="Loki_FieldComponents::form/field.phtml">
     <arguments>
         <argument name="input_type" xsi:type="string">date</argument>
-        <argument name="field_type" xsi:type="string">text</argument>
         <argument name="field_attributes" xsi:type="array">
             <item name="x-flatpickr" xsi:type="boolean">true</item>
         </argument>
