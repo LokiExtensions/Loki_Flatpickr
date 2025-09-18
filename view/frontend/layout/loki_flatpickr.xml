@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <referenceContainer name="loki-scripts">
+        <referenceContainer name="loki.script">
             <block name="loki.directives.flatpickr" template="Loki_Flatpickr::script/directive-flatpickr.phtml"/>
         </referenceContainer>
     </body>
