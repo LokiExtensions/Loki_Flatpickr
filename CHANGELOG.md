@@ -6,14 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 23 September 2025
+### Fixed
+- Rename loki.script from container to block to allow caching
+- Rename loki script containers
+
 ## [1.0.3] - 04 September 2025
 ### Fixed
 - Loading Flatpickr JS async does not work
-- Remove redundant field_type definition from README
+- Remove redundant `field_type` definition from README
 
 ## [1.0.2] - 03 September 2025
 ### Fixed
-- array_merge_recursive does not work, use array_merge instead
+- `array_merge_recursive` does not work, `use array_merge` instead
 - Add examples to README
 
 ## [1.0.1] - 02 September 2025
