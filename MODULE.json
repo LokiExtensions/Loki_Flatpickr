@@ -3,6 +3,7 @@
         "Loki_Components"
     ],
     "modules": [
+        "Loki_Base",
         "Loki_Components",
         "Loki_CssUtils",
         "Magento_Backend",
