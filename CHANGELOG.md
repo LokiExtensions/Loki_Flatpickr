@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 12 December 2025
+### Fixed
+- Do not defer CSS
+- Update composer keywords
+- Update composer keywords
+- Update composer keywords
+
 ## [1.0.4] - 23 September 2025
 ### Fixed
 - Rename loki.script from container to block to allow caching
