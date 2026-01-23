@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.6] - 23 January 2026
+### Fixed
+- Increase` PHPCS_LEVEL` to 6
+- Add new GitHub Action workflows
+
 ## [1.0.5] - 12 December 2025
 ### Fixed
 - Do not defer CSS
