@@ -1,12 +1,11 @@
 <?php
 declare(strict_types=1);
 
-/** @version 1.0.6 */
-
 use Loki\Components\Factory\ViewModelFactory;
 use Loki\Flatpickr\ViewModel\Options;
 use Magento\Framework\View\Element\Template;
 
+/** @version 1.0.6 */
 /** @var Template $block */
 /** @var ViewModelFactory $viewModelFactory */
 /** @var Options $options */
@@ -14,8 +13,13 @@ $options = $viewModelFactory->create(Options::class);
 ?>
 <script>
     document.addEventListener('alpine:init', () => {
-        Alpine.directive('flatpickr', (el, {}) => {
-            flatpickr(el, JSON.parse('<?= /* @noEscape */ $options->toJson($block) ?>'));
+        Alpine.directive('flatpickr', (el, {expression}) => {
+            const options = Object.assign(
+                JSON.parse('<?= /* @noEscape */ $options->toJson($block) ?>'),
+                expression.length > 0 ? JSON.parse(expression) : {},
+            );
+
+            flatpickr(el, options);
         });
     });
 </script>

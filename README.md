@@ -39,6 +39,20 @@ The Flatpickr directive is inserted via a block `loki.directives.flatpickr`. If 
 </referenceBlock>
 ```
 
+Instead of a global configuration, options can also be set per field:
+```xml
+<block name="example" template="Loki_FieldComponents::form/field.phtml">
+    <arguments>
+        <argument name="input_type" xsi:type="string">date</argument>
+        <argument name="field_attributes" xsi:type="array">
+            <item name="x-flatpickr" xsi:type="array">
+                <item name="altFormat" xsi:type="string">d-m-Y</item>
+            </item>
+        </argument>
+    </arguments>
+</block>
+```
+
 For all options, see [https://flatpickr.js.org/options/](https://flatpickr.js.org/options/)
 
 Note that changing the `dateFormat` will also change the value sent to Magento. It is probably best to keep this at its default (`Y-m-d`).
