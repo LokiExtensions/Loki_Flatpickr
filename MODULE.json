@@ -1,6 +1,7 @@
 {
     "sequence": [
-        "Loki_Components"
+        "Loki_Components",
+        "Magento_Store"
     ],
     "modules": [
         "Loki_Base",
@@ -15,7 +16,5 @@
     ],
     "components": [],
     "config": [],
-    "tests": [],
-    "phpcs_severity": "6",
-    "phpstan_level": "5"
+    "tests": []
 }
