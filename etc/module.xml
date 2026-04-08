@@ -3,6 +3,7 @@
     <module name="Loki_Flatpickr">
         <sequence>
             <module name="Loki_Components"/>
+            <module name="Magento_Store"/>
         </sequence>
     </module>
 </config>
