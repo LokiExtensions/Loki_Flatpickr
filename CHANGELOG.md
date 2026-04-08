@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7] - 08 April 2026
+### Fixed
+- Properly set first day of week
+- Allow setting options per field
+
 ## [1.0.6] - 23 January 2026
 ### Fixed
 - Increase` PHPCS_LEVEL` to 6
