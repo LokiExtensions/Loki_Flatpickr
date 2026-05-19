@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.8] - 19 May 2026
+### Fixed
+- Do not preload Flatpickr CSS
+
 ## [1.0.7] - 08 April 2026
 ### Fixed
 - Properly set first day of week
