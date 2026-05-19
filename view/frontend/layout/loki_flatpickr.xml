@@ -2,13 +2,21 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <script src="Loki_Flatpickr::js/flatpickr.min.js" defer="true" />
-        <css src="Loki_Flatpickr::css/flatpickr.min.css" defer="true" />
+        <script src="Loki_Flatpickr::js/flatpickr.min.js" defer="true"/>
+        <css src="Loki_Flatpickr::css/flatpickr.min.css"/>
     </head>
 
     <body>
         <referenceBlock name="loki.script">
             <block name="loki.script.directive.flatpickr" template="Loki_Flatpickr::script/directive-flatpickr.phtml"/>
+        </referenceBlock>
+
+        <referenceBlock name="link-preload">
+            <arguments>
+                <argument name="scripts" xsi:type="array">
+                    <item name="Loki_Flatpickr/css/flatpickr.min.css" xsi:type="boolean">false</item>
+                </argument>
+            </arguments>
         </referenceBlock>
     </body>
 </page>
