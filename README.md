@@ -1,5 +1,13 @@
 # Loki_Flatpickr
 
+<!-- badges.specs.start -->
+![Magento version](https://img.shields.io/badge/Magento-2.4.6%20%7C%202.4.9-orange)
+![PHP version](https://img.shields.io/badge/PHP-8.2%E2%80%938.5-777BB4)
+![License](https://img.shields.io/badge/License-OSL--3.0-blue)
+![Latest Version](https://img.shields.io/packagist/v/loki/magento2-flatpickr)
+<!-- badges.specs.end -->
+
+
 **This Magento 2 module adds an Alpine.js `x-flatpickr` directive to transform a simple input field into a Flatpickr date picker.**
 
 ### Installation
@@ -56,3 +64,13 @@ Instead of a global configuration, options can also be set per field:
 For all options, see [https://flatpickr.js.org/options/](https://flatpickr.js.org/options/)
 
 Note that changing the `dateFormat` will also change the value sent to Magento. It is probably best to keep this at its default (`Y-m-d`).
+
+## Current status
+
+<!-- badges.test.start -->
+![Static Tests](https://img.shields.io/github/actions/workflow/status/LokiExtensions/Loki_Flatpickr/static-tests.yml?label=static-tests)
+![Unit Tests](https://img.shields.io/github/actions/workflow/status/LokiExtensions/Loki_Flatpickr/unit-tests.yml?label=unit-tests)
+![Integration Tests](https://img.shields.io/github/actions/workflow/status/LokiExtensions/Loki_Flatpickr/integration-tests.yml?label=integration-tests)
+![Playwright](https://img.shields.io/github/actions/workflow/status/LokiExtensions/Loki_Flatpickr/playwright.yml?label=playwright)
+![DI Compilation](https://img.shields.io/github/actions/workflow/status/LokiExtensions/Loki_Flatpickr/compile.yml?label=compile)
+<!-- badges.test.end -->
