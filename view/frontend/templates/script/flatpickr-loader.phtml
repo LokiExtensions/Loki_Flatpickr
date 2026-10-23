@@ -1,0 +1,42 @@
+<?php
+declare(strict_types=1);
+
+use Magento\Framework\Escaper;
+use Magento\Framework\View\Element\Template;
+
+/** @version 1.0.8 */
+/** @var Template $block */
+/** @var Escaper $escaper */
+?>
+<script>
+    // With RequireJS (Luma), the Flatpickr UMD wrapper registers an anonymous AMD module instead of setting
+    // window.flatpickr. Run the Flatpickr factory directly, but only for the define() call of the Flatpickr script.
+    (function () {
+        if (typeof window.define !== 'function' || !window.define.amd) {
+            return;
+        }
+
+        const originalDefine = window.define;
+        const flatpickrDefine = function (factory) {
+            const script = document.currentScript;
+            if (script && script.id === 'loki-flatpickr-js' && typeof factory === 'function') {
+                window.flatpickr = factory();
+                return;
+            }
+
+            return originalDefine.apply(this, arguments);
+        };
+
+        Object.assign(flatpickrDefine, originalDefine);
+        window.define = flatpickrDefine;
+        window.lokiFlatpickrOriginalDefine = originalDefine;
+    })();
+</script>
+<script id="loki-flatpickr-js"
+        src="<?= $escaper->escapeUrl($block->getViewFileUrl('Loki_Flatpickr::js/flatpickr.min.js')) ?>"></script>
+<script>
+    if (window.lokiFlatpickrOriginalDefine) {
+        window.define = window.lokiFlatpickrOriginalDefine;
+        delete window.lokiFlatpickrOriginalDefine;
+    }
+</script>
