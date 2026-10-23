@@ -1,0 +1,17 @@
+<?php
+declare(strict_types=1);
+
+/** Test-only template, used by the Playwright tests via the layout handle loki_flatpickr_test */
+?>
+<div id="loki-flatpickr-test" x-data>
+    <label for="flatpickr-default">Default</label>
+    <input id="flatpickr-default" name="flatpickr_default" type="date" x-flatpickr/>
+
+    <label for="flatpickr-field-options">Field options</label>
+    <input id="flatpickr-field-options" name="flatpickr_field_options" type="date"
+           x-flatpickr='{"altFormat":"d-m-Y"}'/>
+
+    <label for="flatpickr-min-date">Minimum date</label>
+    <input id="flatpickr-min-date" name="flatpickr_min_date" type="date"
+           x-flatpickr='{"minDate":"2026-01-10","defaultDate":"2026-01-15"}'/>
+</div>

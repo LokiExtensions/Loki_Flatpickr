@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Test-only layout handle, used by the Playwright tests via the Loki_FunctionalTests test page -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="loki.script.directive.flatpickr">
+            <arguments>
+                <argument name="options" xsi:type="array">
+                    <item name="altFormat" xsi:type="string">d/m/Y</item>
+                    <item name="ariaDateFormat" xsi:type="string">j 'M" Y</item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

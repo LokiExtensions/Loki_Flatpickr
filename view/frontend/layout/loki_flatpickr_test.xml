@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Test-only layout handle, used by the Playwright tests via the Loki_FunctionalTests test page -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="loki_flatpickr"/>
+
+    <body>
+        <referenceContainer name="content">
+            <block name="loki-flatpickr.test" template="Loki_Flatpickr::test/example.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
