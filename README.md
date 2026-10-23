@@ -35,10 +35,10 @@ If you want to add Flatpickr to a Loki Field Component, add the `x-flatpickr` di
 ```
 
 ### Customization
-The Flatpickr directive is inserted via a block `loki.directives.flatpickr`. If you want to change the options for Flatpickr, you can use the block argument `options` for this:
+The Flatpickr directive is inserted via a block `loki.script.directive.flatpickr`. If you want to change the options for Flatpickr, you can use the block argument `options` for this:
 
 ```xml
-<referenceBlock name="loki.directives.flatpickr">
+<referenceBlock name="loki.script.directive.flatpickr">
     <arguments>
         <argument name="options" xsi:type="array">
             <item name="altFormat" xsi:type="string">d-m-Y</item>
