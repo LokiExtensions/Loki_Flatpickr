@@ -9,14 +9,22 @@
         "Loki_CssUtils",
         "Magento_Backend",
         "Magento_Config",
+        "Magento_Csp",
         "Magento_Customer",
+        "Magento_Directory",
+        "Magento_Eav",
         "Magento_Quote",
         "Magento_Store",
+        "Magento_Theme",
         "Yireo_CspUtilities"
     ],
     "components": [],
     "config": [],
-    "tests": [],
+    "tests": {
+        "unit": 7,
+        "integration": 14,
+        "functional": 8
+    },
     "phpcs_severity": "6",
     "phpstan_level": "5",
     "module_name": "Loki_Flatpickr",
