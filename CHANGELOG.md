@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.9] - 29 October 2026
+### Fixed
+- Fix name of Flatpickr directive block in README
+- Define `window.flatpickr` when RequireJS is present
+- Safely output Flatpickr options containing quotes
+
 ## [1.0.8] - 19 May 2026
 ### Fixed
 - Do not preload Flatpickr CSS
